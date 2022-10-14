@@ -80,10 +80,10 @@ export default function Purchase() {
       <Navbar />
 
       {!isInitialized ? (
-        <>
+        <div className="flex flex-col items-center justify-center space-y-3 pt-20">
           <p>Your account has not been initialized yet</p>
-          <button onClick={initialize}>Initialize Account</button>
-        </>
+          <button onClick={initialize} className='rounded-full px-6 py-2 bg-blue-500 text-white'>Initialize Account</button>
+        </div>
       ) : (
         <main className="flex flex-col items-center space-y-5 justify-center pt-40">
             <h1 className="text-4xl font-semibold text-blue-500 text-center pb-10">Purchase a cool new domain name <br/> of your choice</h1>
