@@ -55,10 +55,10 @@ export default function Home() {
         <h1 className="text-center text-xl font-semibold pt-4">Your Registered Domains</h1>
 
         {!isInitialized ? (
-          <>
+          <div className="flex flex-col items-center justify-center space-y-3  pt-20">
             <p>Your account has not been initialized yet</p>
-            <button onClick={initialize}>Initialize Account</button>
-          </>
+            <button onClick={initialize} className='rounded-full px-6 py-2 bg-blue-500 text-white'>Initialize Account</button>
+          </div>
         ) : (
             <div className="flex justify-center pt-6 flex-wrap">
             {
