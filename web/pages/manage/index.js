@@ -69,8 +69,8 @@ export default function Home() {
               // Otherwise, loop over the array, and render information
               // about each domain
               domainInfos.map((di, idx) => (
-                <Link href={`/manage/${di.nameHash}`} >
-                    <a key={idx}>
+                <Link href={`/manage/${di.nameHash}`} key={idx} >
+                    <a >
                         <div className="border rounded-2xl px-7 py-5 space-y-3 bg-[#00A3E9] max-w-max mx-3 mb-3">
                         <p className="text-5xl pb-2 text-white">
                             {di.name}
